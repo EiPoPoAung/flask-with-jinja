@@ -1,0 +1,16 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Flask with Jinja</title>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<img src="{{ url_for('static',filename='cumdy.JPEG')}}"></li>
+			{@ This is command block.We will some set variable to the jinja template@}
+			{% set name="EiPoPoAung" %}
+			{% set user_name="EiPoPoAung"%}
+			<li> {{name}}</li>
+			<li>
+				<a href=" https://github.com/{{user_name}}">GitHub</a></li>
+			
