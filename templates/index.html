@@ -6,11 +6,16 @@
 	<body>
 		<ul>
 			<li>
-				<img src="{{ url_for('static',filename='cumdy.JPEG')}}"></li>
-			{@ This is command block.We will some set variable to the jinja template@}
-			{% set name="EiPoPoAung" %}
+				<img src="{{ url_for('static',filename='ko.jpg')}}"></li>
+			{@ This is command block.We will some set variable to the jinja template @}
+			{% set name="Ei Po Po Aung" %}
 			{% set user_name="EiPoPoAung"%}
 			<li> {{name}}</li>
-			<li>
+						<li>
 				<a href=" https://github.com/{{user_name}}">GitHub</a></li>
-			
+			<li>
+				<a href="https://github.com/{{user_name}}.herokuapp.com">Heroku</a></li>
+		</ul>
+		</body>
+</html>
+
